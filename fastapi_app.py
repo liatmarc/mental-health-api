@@ -22,3 +22,7 @@ def predict(features: InputFeatures):
     df = pd.DataFrame([features.dict()])
     prediction = model.predict(df)
     return {"mental_health_risk": encoder.inverse_transform(prediction)[0]}
+
+@app.get("/")
+def read_root():
+    return {"message": "Mental Health Risk API is running. Visit /docs for the UI."}
