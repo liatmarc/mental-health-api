@@ -1,0 +1,19 @@
+# .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+
+# Model artifacts
+*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Misc
+.DS_Store
+.env
