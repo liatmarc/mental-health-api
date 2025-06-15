@@ -26,3 +26,8 @@ def predict(features: InputFeatures):
 @app.get("/")
 def read_root():
     return {"message": "Mental Health Risk API is running. Visit /docs for the UI."}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=10000)
+
